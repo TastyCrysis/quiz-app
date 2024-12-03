@@ -21,7 +21,7 @@ h1 {
   margin: 10px;
 }
 
-.cards {
+.content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,7 +31,7 @@ h1 {
   width: 80%;
 }
 
-.question-card {
+.card {
   border: ridge black;
   width: 100%;
   position: relative;
@@ -42,4 +42,17 @@ h1 {
   top: -15px;
   right: 5px;
   width: 12%;
+  /* fill: white;
+  stroke: black; */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-headline {
+  margin-top: 30px;
+  padding-right: 145px;
 }
