@@ -34,4 +34,11 @@ h1 {
 .question-card {
   border: ridge black;
   width: 100%;
+  position: relative;
+}
+
+.bookmark {
+  position: absolute;
+  top: -10px;
+  right: 20px;
 }
