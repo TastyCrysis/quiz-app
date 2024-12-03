@@ -10,6 +10,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: bisque;
 }
 
 body {
@@ -35,6 +36,7 @@ h1 {
   border: ridge black;
   width: 100%;
   position: relative;
+  background-color: burlywood;
 }
 
 .bookmark {
@@ -55,4 +57,16 @@ h1 {
 .card-headline {
   margin-top: 30px;
   padding-right: 145px;
+}
+
+.card-text {
+  margin-top: 8px;
+  margin-bottom: 25px;
+}
+
+.answer-button {
+  padding: 10px;
+  box-shadow: 4px 4px black;
+  background-color: aqua;
+  border: aqua;
 }
