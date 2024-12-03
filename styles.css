@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: ridge black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+h1 {
+  text-shadow: 2px 4px rgba(175, 12, 17, 0.89);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  gap: 10px;
+  width: 75%;
+}
+
+.question-card {
+  border: ridge black;
+  width: 80%;
+  padding: 18% 65%;
+}
