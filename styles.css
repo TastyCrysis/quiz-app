@@ -57,11 +57,11 @@ h1 {
 .card-headline {
   margin-top: 30px;
   padding-right: 145px;
+  margin-left: 8px;
 }
 
 .card-text {
-  margin-top: 8px;
-  margin-bottom: 25px;
+  margin: 8px 25px 25px 25px;
 }
 
 .answer-button {
