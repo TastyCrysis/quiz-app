@@ -18,7 +18,7 @@ body {
 }
 
 h1 {
-  text-shadow: 2px 4px rgba(175, 12, 17, 0.89);
+  margin: 10px;
 }
 
 .cards {
@@ -26,13 +26,12 @@ h1 {
   flex-direction: column;
   align-items: center;
   margin: auto;
-  padding: 20px;
-  gap: 10px;
-  width: 75%;
+  padding: 30px 0;
+  gap: 20px;
+  width: 80%;
 }
 
 .question-card {
   border: ridge black;
-  width: 80%;
-  padding: 18% 65%;
+  width: 100%;
 }
