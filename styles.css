@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  border-bottom: ridge black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+body {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+h1 {
+  margin: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+  padding: 30px 0;
+  width: 90%;
+}
+
+.card {
+  border: ridge black;
+  width: 100%;
+  position: relative;
+  background-color: burlywood;
+}
+
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  width: 12%;
+  /* fill: white;
+  stroke: black; */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-headline {
+  margin-top: 30px;
+  padding-right: 145px;
+  margin-left: 8px;
+}
+
+.card-text {
+  margin: 8px 25px 25px 25px;
+}
+
+.answer-button {
+  padding: 10px 40px;
+  box-shadow: 4px 4px black;
+  background-color: aqua;
+  border: aqua;
+}
+
+.answer-text {
+  margin-top: 35px;
+}
+
+.tags {
+  list-style: none;
+  display: flex;
+  gap: 3px;
+  margin: 20px 0 0 8px;
+}
+
+.item {
+  border: ridge black 1px;
+  background-color: coral;
+  padding: 1px 5px;
+  border-radius: 5px;
+}
