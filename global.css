@@ -5,44 +5,13 @@
 }
 
 :root {
-  /* Light mode colors */
-  --primary-color-light: #2ba199;
-  --secondary-color-light: #e64545;
-  --background-color-light: #f5f5f5;
-  --box-shadow-light: rgba(43, 161, 153, 0.2);
-  --text-shadow-light: rgba(0, 0, 0, 0.2);
-  --text-color-light: #333333;
-  --card-background-light: #ffffff;
-
-  /* Dark mode colors */
-  --primary-color-dark: #4ecdc4;
-  --secondary-color-dark: #ff6b6b;
-  --background-color-dark: #292f36;
-  --box-shadow-dark: rgba(78, 205, 196, 0.2);
-  --text-shadow-dark: rgba(0, 0, 0, 0.3);
-  --text-color-dark: #ffffff;
-  --card-background-dark: #1a1e23;
-
-  /* Default to light mode */
-  --primary-color: var(--primary-color-light);
-  --secondary-color: var(--secondary-color-light);
-  --background-color: var(--background-color-light);
-  --box-shadow: var(--box-shadow-light);
-  --text-shadow: var(--text-shadow-light);
-  --text-color: var(--text-color-light);
-  --card-background: var(--card-background-light);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --primary-color: var(--primary-color-dark);
-    --secondary-color: var(--secondary-color-dark);
-    --background-color: var(--background-color-dark);
-    --box-shadow: var(--box-shadow-dark);
-    --text-shadow: var(--text-shadow-dark);
-    --text-color: var(--text-color-dark);
-    --card-background: var(--card-background-dark);
-  }
+  --primary-color: #4ecdc4;
+  --secondary-color: #ff6b6b;
+  --background-color: #292f36;
+  --box-shadow: rgba(78, 205, 196, 0.2);
+  --text-shadow: rgba(0, 0, 0, 0.3);
+  --text-color: #ffffff;
+  --card-background: #1a1e23;
 }
 
 header {
