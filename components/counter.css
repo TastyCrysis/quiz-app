@@ -1,0 +1,24 @@
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.counter-item {
+  width: 50%;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 10px;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
