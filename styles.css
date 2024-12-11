@@ -6,3 +6,51 @@
 @import url("components/user-profile.css");
 @import url("components/counter.css");
 @import url("components/theme-switch.css");
+
+.question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 90%;
+  margin: 0px auto;
+}
+
+.title-input,
+.question-input,
+.answer-input,
+.tags-input,
+.question-button {
+  width: 80%;
+  max-width: 400px;
+  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  margin: 0 auto 10px auto;
+  padding: 8px 16px;
+  font-size: larger;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+.question-input,
+.answer-input {
+  height: 100px;
+}
+
+.question-button {
+  width: 50%;
+  display: block;
+  margin: 25px auto;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.question-form label {
+  color: var(--primary-color);
+  font-weight: bold;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto 4px auto;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}
