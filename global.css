@@ -12,6 +12,7 @@
   --secondary-color: #4db6ac;
   --text-color: #333333;
   --box-shadow: rgba(0, 0, 0, 0.05);
+  --counter-color: #333333;
 }
 
 :root {
@@ -22,6 +23,7 @@
   --secondary-color: #ff6b6b;
   --text-color: #ffffff;
   --box-shadow: rgba(0, 0, 0, 0.3);
+  --counter-color: #1a1e23;
 }
 
 [data-theme="light"] .bookmark--active {

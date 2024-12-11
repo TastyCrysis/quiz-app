@@ -3,7 +3,7 @@
   background-color: var(--secondary-color);
   color: var(--text-color);
   border: none;
-  border-radius: 25px;
+  border-radius: 10px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
