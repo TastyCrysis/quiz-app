@@ -1,0 +1,17 @@
+.answer-button {
+  padding: 12px 45px;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.answer-text {
+  margin-top: 40px;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}

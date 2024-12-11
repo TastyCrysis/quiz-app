@@ -1,0 +1,45 @@
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 4px 0;
+  gap: 5%;
+}
+
+.user-headline {
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.user-image {
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 4px solid var(--primary-color);
+  margin: auto 0;
+  transition: border-color 0.3s ease;
+  padding: 3px;
+}
+
+.user-info {
+  width: 80%;
+  max-width: 400px;
+  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px var(--box-shadow);
+  margin: 0 auto 10px auto;
+  padding: 0 10px;
+  font-size: larger;
+  transition: all 0.3s ease;
+}
+
+.user-info-headline {
+  color: var(--primary-color);
+  font-weight: bold;
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto 4px auto;
+  font-size: 1.5em;
+  transition: color 0.3s ease;
+}

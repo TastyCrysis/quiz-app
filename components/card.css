@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin-bottom: 20px;
+  background-color: var(--card-background);
+  border: 3px solid var(--secondary-color);
+  border-radius: 20px;
+  box-shadow: 0 8px 16px var(--box-shadow);
+  transition: all 0.3s ease;
+}
+
+.bookmark {
+  position: absolute;
+  top: -18px;
+  right: 5px;
+  width: 45px;
+  height: auto;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-headline {
+  margin: 35px 145px 0 8px;
+  color: var(--primary-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.card-text {
+  margin: 12px 30px 30px;
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
