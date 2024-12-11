@@ -13,3 +13,10 @@ button.addEventListener("click", () => {
     button.textContent = "Show Answer";
   }
 });
+
+document.addEventListener("click", (event) => {
+  const bookmarkButton = event.target.closest('[data-js="bookmark-button"]');
+  if (bookmarkButton) {
+    bookmarkButton.classList.toggle("bookmark--active");
+  }
+});

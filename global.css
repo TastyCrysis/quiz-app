@@ -24,6 +24,11 @@
   --box-shadow: rgba(0, 0, 0, 0.3);
 }
 
+[data-theme="light"] .bookmark--active {
+  filter: invert(63%) sepia(13%) saturate(1535%) hue-rotate(217deg)
+    brightness(94%) contrast(87%);
+}
+
 header {
   position: fixed;
   top: 0;
