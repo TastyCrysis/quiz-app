@@ -92,6 +92,25 @@
   background-color: var(--secondary-color);
 }
 
-.test {
+.navbar-icon {
   width: 50px;
+}
+
+.user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.user-headline {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.user-image {
+  vertical-align: middle;
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+  margin: auto 0;
 }
