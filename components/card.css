@@ -37,3 +37,8 @@
   line-height: 1.6;
   transition: color 0.3s ease;
 }
+
+.bookmark--active {
+  filter: invert(67%) sepia(54%) saturate(1103%) hue-rotate(314deg)
+    brightness(101%) contrast(101%);
+}
