@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -16,8 +17,12 @@
         <h2 class="card-headline">Comics</h2>
         <div class="card-content">
           <p class="card-text">When was Bruce Wayne born?</p>
-          <button class="answer-button">Show Answer</button>
-          <p class="answer-text" hidden>February 19th 1939</p>
+          <button class="answer-button" data-js="answer-button" type="button">
+            Show Answer
+          </button>
+          <p class="answer-text" data-js="answer-text" hidden>
+            February 19th 1939
+          </p>
         </div>
         <div>
           <ul class="tags">
@@ -35,8 +40,10 @@
           <p class="card-text">
             What is the name of the continent in the Trails of series?
           </p>
-          <button class="answer-button">Show Answer</button>
-          <p class="answer-text" hidden>Zemuria</p>
+          <button class="answer-button" data-js="answer-button" type="button">
+            Show Answer
+          </button>
+          <p class="answer-text" data-js="answer-text" hidden>Zemuria</p>
         </div>
         <div>
           <ul class="tags">
