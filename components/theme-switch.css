@@ -17,6 +17,7 @@
   display: inline-block;
   width: 60px;
   height: 34px;
+  overflow: hidden;
 }
 
 .theme-switch input {
@@ -35,6 +36,8 @@
   background-color: #ccc;
   transition: 0.4s;
   border-radius: 34px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .slider:before {
@@ -51,10 +54,6 @@
 
 .theme-input:checked + .slider {
   background-color: var(--primary-color);
-}
-
-.theme-input:focus + .slider {
-  box-shadow: 0 0 1px var(--primary-color);
 }
 
 .theme-input:checked + .slider:before {
