@@ -101,6 +101,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 30px 0 8px 0;
   gap: 10%;
 }
 
@@ -125,11 +126,38 @@
   box-shadow: 0 8px 16px var(--box-shadow);
   margin: 0 auto 20px auto;
   padding: 0 15px;
+  font-size: larger;
 }
 
 .user-info-headline {
   color: var(--primary-color);
   font-weight: bold;
-  padding: 0 6%;
-  margin: 20px 0 8px 0;
+  width: 80%;
+  max-width: 400px;
+  margin: 40px auto 8px auto;
+  font-size: 1.5em;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.counter-item {
+  width: 50%;
+  height: 50px;
+  background-color: var(--primary-color);
+  border: 3px solid var(--secondary-color);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 10px 10px;
+  gap: 10px;
 }
