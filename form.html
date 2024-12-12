@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <header>
       <h1>New Question</h1>
     </header>
-    <main class="content">
+    <main class="content" data-js="new-card">
       <article class="card">
         <form class="question-form">
           <label for="title">Your title</label>
-          <input class="title-input" type="text" />
+          <input class="title-input" data-js="title-input" type="text" />
           <label for="question">Your question</label>
-          <textarea class="question-input"></textarea>
+          <textarea class="question-input" data-js="question-input"></textarea>
           <label for="answer">Your answer</label>
-          <textarea class="answer-input"></textarea>
+          <textarea class="answer-input" data-js="answer-input"></textarea>
           <label for="tags">Your tags</label>
-          <input class="tags-input" type="text" />
-          <button class="question-button" type="submit">Submit</button>
+          <input class="tags-input" data-js="tags-input" type="text" />
+          <button class="question-button" data-js="add-button" type="submit">
+            Submit
+          </button>
         </form>
       </article>
     </main>
