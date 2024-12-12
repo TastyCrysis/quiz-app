@@ -48,3 +48,19 @@ addButton.addEventListener("click", (event) => {
   newCard.append(newBookmark, newTitle, newContent, newTags);
   card.append(newCard);
 });
+
+const textCounter = [titleInput, questionInput, answerInput, tagInput];
+
+textCounter.forEach((input) => {
+  const counter = document.createElement("p");
+  counter.classList.add("input-counter");
+  input.after(counter);
+
+  const updateCounter = () => {
+    const remaining = input.maxLength - input.value.length;
+    counter.textContent = `${remaining} characters remaining`;
+  };
+
+  updateCounter();
+  input.addEventListener("input", updateCounter);
+});
