@@ -49,10 +49,6 @@ addButton.addEventListener("click", (event) => {
   card.append(newCard);
 });
 
-const titleCounter = document.createElement("p");
-titleCounter.classList.add("input-counter");
-titleInput.after(titleCounter);
-
 const questionCounter = document.createElement("p");
 questionCounter.classList.add("input-counter");
 questionInput.after(questionCounter);
@@ -61,31 +57,18 @@ const answerCounter = document.createElement("p");
 answerCounter.classList.add("input-counter");
 answerInput.after(answerCounter);
 
-const tagCounter = document.createElement("p");
-tagCounter.classList.add("input-counter");
-tagInput.after(tagCounter);
-
-titleInput.addEventListener("input", () => {
-  const remaining = titleInput.maxLength - titleInput.value.length;
-  titleCounter.textContent = `${remaining} characters remaining`;
-});
+function updateCounter(input, counter) {
+  const remaining = input.maxLength - input.value.length;
+  counter.textContent = `${remaining} characters remaining`;
+}
 
 questionInput.addEventListener("input", () => {
-  const remaining = questionInput.maxLength - questionInput.value.length;
-  questionCounter.textContent = `${remaining} characters remaining`;
+  updateCounter(questionInput, questionCounter);
 });
 
 answerInput.addEventListener("input", () => {
-  const remaining = answerInput.maxLength - answerInput.value.length;
-  answerCounter.textContent = `${remaining} characters remaining`;
+  updateCounter(answerInput, answerCounter);
 });
 
-tagInput.addEventListener("input", () => {
-  const remaining = tagInput.maxLength - tagInput.value.length;
-  tagCounter.textContent = `${remaining} characters remaining`;
-});
-
-titleCounter.textContent = `${titleInput.maxLength} characters remaining`;
 questionCounter.textContent = `${questionInput.maxLength} characters remaining`;
 answerCounter.textContent = `${answerInput.maxLength} characters remaining`;
-tagCounter.textContent = `${tagInput.maxLength} characters remaining`;
