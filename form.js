@@ -49,18 +49,43 @@ addButton.addEventListener("click", (event) => {
   card.append(newCard);
 });
 
-const textCounter = [titleInput, questionInput, answerInput, tagInput];
+const titleCounter = document.createElement("p");
+titleCounter.classList.add("input-counter");
+titleInput.after(titleCounter);
 
-textCounter.forEach((input) => {
-  const counter = document.createElement("p");
-  counter.classList.add("input-counter");
-  input.after(counter);
+const questionCounter = document.createElement("p");
+questionCounter.classList.add("input-counter");
+questionInput.after(questionCounter);
 
-  const updateCounter = () => {
-    const remaining = input.maxLength - input.value.length;
-    counter.textContent = `${remaining} characters remaining`;
-  };
+const answerCounter = document.createElement("p");
+answerCounter.classList.add("input-counter");
+answerInput.after(answerCounter);
 
-  updateCounter();
-  input.addEventListener("input", updateCounter);
+const tagCounter = document.createElement("p");
+tagCounter.classList.add("input-counter");
+tagInput.after(tagCounter);
+
+titleInput.addEventListener("input", () => {
+  const remaining = titleInput.maxLength - titleInput.value.length;
+  titleCounter.textContent = `${remaining} characters remaining`;
 });
+
+questionInput.addEventListener("input", () => {
+  const remaining = questionInput.maxLength - questionInput.value.length;
+  questionCounter.textContent = `${remaining} characters remaining`;
+});
+
+answerInput.addEventListener("input", () => {
+  const remaining = answerInput.maxLength - answerInput.value.length;
+  answerCounter.textContent = `${remaining} characters remaining`;
+});
+
+tagInput.addEventListener("input", () => {
+  const remaining = tagInput.maxLength - tagInput.value.length;
+  tagCounter.textContent = `${remaining} characters remaining`;
+});
+
+titleCounter.textContent = `${titleInput.maxLength} characters remaining`;
+questionCounter.textContent = `${questionInput.maxLength} characters remaining`;
+answerCounter.textContent = `${answerInput.maxLength} characters remaining`;
+tagCounter.textContent = `${tagInput.maxLength} characters remaining`;
