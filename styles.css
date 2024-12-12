@@ -54,3 +54,14 @@
   font-size: 1.5em;
   transition: color 0.3s ease;
 }
+
+.input-counter {
+  font-size: 1em;
+  color: var(--text-color);
+  margin: 0 0 15px 0;
+  text-align: right;
+  width: 80%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
